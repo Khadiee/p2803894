@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+.box{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #ffff;
+    background: black;
+    width: auto;
+}
+
+@media (max-width: 1500px){
+    .box{min-height: 600px;
+    }
+}
+section{
+    padding: 40px 15%;
+}
+
+ul{
+    list-style:none;
+}
+
+/* Header element with social media bar */
+a{
+    text-decoration:none;
+    color: inherit;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding: 50px 100px 0;
+}
+header a{
+    text-transform: capitalize;
+}
+header h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header .nav{
+    display: flex;
+    font-weight: 700;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header .nav li{
+    margin: 0 15px;
+}
+header .nav li:first-child{
+    margin-left: 0;
+}
+header .nav li:last-child{
+    margin-right: 0;
+}
+@media (max-width:1500px){
+    header{padding: 30px 70px;}
+}
+@media (max-height:100px){
+}
+@media (max-width:700px){
+    header{flex-direction: column;}
+    header h2{margin-bottom: 8px;}
+    header .nav li{margin: 0 6px;}
+}
+
+/* The contact form and image css */
+.contact{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+.contact-img img{
+    max-width: 100%;
+    width: 720px;
+    height: auto;
+    border-radius: 10px;
+}
+.contact-form h1{
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+span{
+    color: #f9004d;
+}
+.contact-form p{
+    color: #c6c9d8ef;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input, form textarea{
+    width: 100%;
+    padding: 17px;
+    border:none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+.contact-form form .btn{
+    display: inline-block;
+    background: #f9004d;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+.contact-form form .btn:hover{
+    border: 2px solid;
+    background: transparent;
+    transform: scale(1.1);
+}
+@media (max-width: 1570px){
+    section{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1000px){
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact-form{
+        order: 2;
+    }
+    .contact-img img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Footer and social media bar */
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    }
+.socialmedia {
+    margin-top: 4px;
+    }
+.socialmedia a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    }
+.socialmedia img {
+    width: 30px; 
+    height: 30px; 
+}
+.copyright {
+    margin-top: 7px;
+    color:#ffffff;
+}
